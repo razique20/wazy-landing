@@ -12,8 +12,8 @@ import {
 
 const chips = [
   { icon: LineChart, label: "90-day cash forecast" },
-  { icon: BellRing, label: "30/60/90-day alerts" },
-  { icon: CalendarClock, label: "OCR scan" },
+  { icon: BellRing, label: "90/60/30-day alerts" },
+  { icon: CalendarClock, label: "OCR scan & voice entry" },
 ];
 
 function DashboardMock() {
@@ -31,7 +31,7 @@ function DashboardMock() {
             </div>
             <div>
               <div className="text-sm font-bold text-navy">Personal</div>
-              <div className="text-[11px] text-slate-500">Personal documents</div>
+              <div className="text-[11px] text-slate-500">UAE · AED</div>
             </div>
           </div>
 
@@ -125,7 +125,7 @@ export function Hero() {
         <div className="animate-fade-up">
           <div className="inline-flex items-center gap-2 rounded-full border border-cyan/30 bg-cyan/10 px-4 py-1.5 text-xs font-medium text-cyan">
             <CheckCircle2 className="h-3.5 w-3.5" />
-            Built for the UAE · AED-first
+            Built for the GCC · 6 currencies
           </div>
 
           <h1 className="mt-6 text-4xl font-bold leading-[1.08] tracking-tight text-white sm:text-5xl lg:text-6xl">
@@ -138,8 +138,9 @@ export function Hero() {
 
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-slate-300">
             Wazy forecasts your cash flow and tracks every document expiry —
-            trade licences, visas, Emirates ID, insurance — with alerts
-            30/60/90 days before they&apos;re due.
+            trade licences, visas, civil IDs, insurance — with alerts 90/60/30
+            days before they&apos;re due. Built for personal users, freelancers
+            and businesses across the GCC.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-4">

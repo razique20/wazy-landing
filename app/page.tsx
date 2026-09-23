@@ -3,7 +3,8 @@ import { Hero } from "@/components/hero";
 import { ProblemStrip } from "@/components/problem-strip";
 import { FeaturePillars } from "@/components/feature-pillars";
 import { HowItWorks } from "@/components/how-it-works";
-import { BuiltForUae } from "@/components/built-for-uae";
+import { BuiltForGcc } from "@/components/built-for-gcc";
+import { Pricing } from "@/components/pricing";
 import { Faq } from "@/components/faq";
 import { FinalCta } from "@/components/final-cta";
 
@@ -14,7 +15,7 @@ const jsonLd = {
   applicationCategory: "FinanceApplication",
   operatingSystem: "iOS, Android",
   description:
-    "AI-powered financial budgeting & cash-flow intelligence app with document expiry tracking and renewal alerts, built for personal and small-business use in the UAE.",
+    "AI-powered financial budgeting & cash-flow intelligence app with document expiry tracking and renewal alerts, built for personal users, freelancers and businesses across the GCC.",
   url: "https://wazy.app",
   offers: { "@type": "Offer", price: "0", priceCurrency: "AED" },
 };
@@ -32,7 +33,8 @@ export default function HomePage() {
         <ProblemStrip />
         <FeaturePillars />
         <HowItWorks />
-        <BuiltForUae />
+        <BuiltForGcc />
+        <Pricing />
         <Faq />
         <FinalCta />
       </main>

@@ -5,6 +5,10 @@ import { ChevronDown } from "lucide-react";
 
 const faqs = [
   {
+    q: "Which countries does Wazy support?",
+    a: "All six GCC countries — UAE, Saudi Arabia, Qatar, Kuwait, Bahrain and Oman. Wazy natively supports each country's currency (AED, SAR, QAR, KWD, BHD, OMR) and its government authorities, from RTA and GDRFA in the UAE to ZATCA and Absher in Saudi Arabia.",
+  },
+  {
     q: "What platforms does Wazy support?",
     a: "Wazy is available on iOS and Android. Your data syncs through your account, so your documents and budgets follow you across devices.",
   },
@@ -22,19 +26,23 @@ const faqs = [
   },
   {
     q: "Is Wazy free?",
-    a: "Core tracking features — documents, budgets, forecasts and reminders — are free. Optional premium features may be introduced later with clear pricing disclosed before purchase.",
+    a: "Core tracking — documents, budgets, forecasts and reminders — is free forever with the Free tier. Plus and Business tiers add unlimited documents, more AI capacity and team access. See the pricing section above.",
   },
   {
     q: "What kinds of documents can I track?",
-    a: "Trade licences, visas, Emirates ID, passports, vehicle registrations, tenancy contracts (Ejari), insurance policies and subscriptions — for yourself and for your company.",
+    a: "Trade licences, commercial registrations, visas, passports, Emirates/Civil IDs, vehicle registrations, tenancy contracts (Ejari), insurance policies and subscriptions — for yourself and for your company. You can also create custom document types with your own renewal cycles and issuing authorities.",
   },
   {
-    q: "How do the 30/60/90-day alerts work?",
-    a: "For every document, Wazy sends reminders at 90, 60 and 30 days before expiry. You'll see urgency colors in the app — green (safe), amber (due soon), red (expiring or expired).",
+    q: "How do the 90/60/30-day alerts work?",
+    a: "For every document, Wazy sends reminders at 90, 60 and 30 days before expiry. You'll see urgency colors in the app — green (safe), amber (due soon), red (expiring or expired) — alongside a fine-risk estimate if the document lapses.",
   },
   {
     q: "How accurate is the cash-flow forecast?",
     a: "The 90-day forecast simulates your daily balance using your recurring income and expenses, plus known renewal fees. It flags dips so you can move money early. Treat it as a planning aid, not financial advice.",
+  },
+  {
+    q: "How does the AI quota work?",
+    a: "Each subscription tier includes a monthly quota of AI summaries and budget plans (e.g. Free gets 3 summaries and 2 plans per month). Wazy asks for your confirmation before using a credit, and your last generated summary or plan stays available without consuming quota.",
   },
 ];
 

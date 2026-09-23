@@ -5,6 +5,7 @@ import {
   CalendarClock,
   CheckCircle2,
   FolderOpen,
+  Mic,
   ScanLine,
   Sparkles,
   TrendingDown,
@@ -21,39 +22,52 @@ type Pillar = {
 
 const pillars: Pillar[] = [
   {
-    icon: Wallet,
-    eyebrow: "Financial Intelligence",
-    title: "Budgets that behave, forecasts that warn you first",
-    body: "Your whole financial picture in AED — tracked, budgeted and projected, so renewals never blindside you.",
+    icon: FolderOpen,
+    eyebrow: "Document Expiry & Compliance",
+    title: "Every licence, visa and ID — tracked to the day",
+    body: "A radar for your paperwork: urgency colors, renewal windows, fee estimates and fine-risk calculations for every document you care about.",
     points: [
-      "Unified ledger for income & expenses with a monthly pace reading",
-      "Category budgets with 80% and 100% spend alerts",
-      "Savings envelopes for the renewals you know are coming",
-      "90-day cash-flow forecast with automatic dip detection",
+      "Personal and business collections — one workspace per company",
+      "Pre-configured types: Emirates/Civil ID, trade licences, visas, passports, vehicle registrations, tenancy contracts, insurance, subscriptions",
+      "Fine-risk estimates if a document lapses (e.g. licence expired → fine + black points)",
+      "OCR scan (Google ML Kit) extracts dates and attaches files automatically",
+      "Smart reminders at 90, 60 and 30 days before every expiry",
     ],
   },
   {
-    icon: FolderOpen,
-    eyebrow: "Document Expiry Tracking",
-    title: "Every licence, visa and ID — tracked to the day",
-    body: "A radar for your paperwork: urgency colors, renewal windows and fees for every document you care about.",
+    icon: Wallet,
+    eyebrow: "Ledger & Cash-Flow Intelligence",
+    title: "Budgets that behave, forecasts that warn you first",
+    body: "Your whole financial picture in your local currency — tracked, budgeted and projected, so renewals never blindside you.",
     points: [
-      "Multi-entity collections: keep Personal and Company apart",
-      "Emirates ID, trade licences, visas, tenancy contracts, insurance and more",
-      "Smart 30/60/90-day reminders before every deadline",
-      "Renewal-window progress and fee estimates per document",
+      "Unified income & expense ledger tagged by collection, method, category and document",
+      "90-day cash-flow forecast merging habits, recurring commitments and upcoming renewal fees",
+      "Category budget caps (rent, salaries, utilities, marketing…) with 80%/100% alerts",
+      "Savings envelopes and automatic recurring schedules for fixed commitments",
     ],
   },
   {
     icon: BrainCircuit,
-    eyebrow: "Smart AI Engine",
-    title: "Type a sentence. Get a structured transaction.",
-    body: "Wazy's AI reads your documents and your plain English, then does the data entry for you.",
+    eyebrow: "Groq AI Engine",
+    title: "An executive summary and a budget plan, on demand",
+    body: "Groq-powered AI reads your documents, your ledger and your goals, then writes the plan for you — at high speed.",
     points: [
-      'Natural-language quick add: "Paid AED 450 for DEWA utilities yesterday"',
-      "Auto-categorization with UAE vendor dictionaries — DEWA, Salik, Talabat, Etisalat",
-      "Bill-spike & anomaly detection vs your 3-month baseline",
-      "OCR scan-to-fill extracts dates, amounts and vendors from any document",
+      "AI Executive Summary: expiries, pending fees, spending patterns and net cash in 2–3 sentences with actionable insight cards",
+      "AI Budget Planner: give a goal (e.g. \"Buy a delivery van for AED 25,000\") and a deadline — get a step-by-step plan",
+      "Ready-made templates (Comfortable, Balanced, Goal-first) with a live Goal-Health score",
+      "Fair monthly AI quota per tier, with a clear confirmation before each credit is used",
+    ],
+  },
+  {
+    icon: Mic,
+    eyebrow: "Smart Automation",
+    title: "Type it or say it. Wazy does the data entry.",
+    body: "Natural-language and voice entry with GCC-tuned intelligence that learns your habits.",
+    points: [
+      'Natural-language quick add: "Paid 1,200 SAR for office rent today" — parsed to amount, currency, category and date',
+      "Voice entry via built-in speech recognition",
+      "Auto-categorization with GCC vendor dictionaries (Talabat, Salik, DEWA, Etisalat) plus habit learning",
+      "Bill-spike detection: flagged when a bill runs far above your 3-month average",
     ],
   },
 ];
@@ -67,14 +81,15 @@ export function FeaturePillars() {
             Features
           </span>
           <h2 className="mt-3 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
-            Three engines. One clear picture.
+            Four engines. One clear picture.
           </h2>
           <p className="mt-4 text-lg text-slate-600">
-            Money, deadlines and intelligence — built together, not bolted on.
+            Documents, money, AI intelligence and automation — built together,
+            not bolted on.
           </p>
         </div>
 
-        <div className="mt-16 grid gap-6 lg:grid-cols-3">
+        <div className="mt-16 grid gap-6 lg:grid-cols-2">
           {pillars.map((p) => (
             <div
               key={p.eyebrow}
@@ -102,19 +117,19 @@ export function FeaturePillars() {
 
         <div className="mt-16 flex flex-wrap items-center justify-center gap-3 text-xs font-medium text-slate-500">
           <Sparkles className="h-4 w-4 text-cyan-dark" />
-          <span>Powered by Google ML Kit OCR</span>
+          <span>Powered by Groq AI</span>
+          <span className="text-slate-300">·</span>
+          <ScanLine className="h-4 w-4 text-cyan-dark" />
+          <span>Google ML Kit OCR</span>
           <span className="text-slate-300">·</span>
           <CalendarClock className="h-4 w-4 text-cyan-dark" />
-          <span>30/60/90-day reminder engine</span>
+          <span>90/60/30-day reminder engine</span>
           <span className="text-slate-300">·</span>
           <TrendingDown className="h-4 w-4 text-cyan-dark" />
           <span>Cash-flow dip detection</span>
           <span className="text-slate-300">·</span>
           <Banknote className="h-4 w-4 text-cyan-dark" />
-          <span>AED-first</span>
-          <span className="text-slate-300">·</span>
-          <ScanLine className="h-4 w-4 text-cyan-dark" />
-          <span>Scan-to-fill</span>
+          <span>All 6 GCC currencies</span>
           <span className="text-slate-300">·</span>
           <BellRing className="h-4 w-4 text-cyan-dark" />
           <span>Bill-spike alerts</span>

@@ -55,8 +55,8 @@ export function FinalCta() {
           Stop tracking deadlines in your head.
         </h2>
         <p className="mx-auto mt-4 max-w-2xl text-lg text-slate-200">
-          Put every renewal and every dirham on one dashboard — free for your
-          personal and company documents.
+          Put every renewal and every dirham on one dashboard — free to start,
+          across all six GCC countries.
         </p>
 
         <div className="mt-8 flex flex-wrap items-center justify-center gap-4">

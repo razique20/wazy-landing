@@ -16,7 +16,7 @@ export function Footer() {
             </Link>
             <p className="mt-4 text-sm leading-relaxed text-slate-400">
               Every renewal. Every dirham. One dashboard — financial
-              intelligence and document expiry tracking for the UAE.
+              intelligence and document expiry tracking for the GCC.
             </p>
           </div>
 
@@ -80,7 +80,7 @@ export function Footer() {
 
         <div className="mt-12 flex flex-col items-center justify-between gap-3 border-t border-white/10 pt-6 text-xs text-slate-500 sm:flex-row">
           <span>© 2026 Wazy. All rights reserved.</span>
-          <span>Made in the UAE 🇦🇪</span>
+          <span>Made for the GCC 🌍</span>
         </div>
       </div>
     </footer>

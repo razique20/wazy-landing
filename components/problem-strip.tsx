@@ -4,7 +4,7 @@ const problems = [
   {
     icon: FileWarning,
     title: "Fines you never saw coming",
-    body: "A missed trade-licence renewal in the UAE can trigger thousands of dirhams in fines — sometimes within days of expiry.",
+    body: "A missed trade-licence renewal can trigger heavy government fines, impoundment or frozen accounts — sometimes within days of expiry.",
     tone: "text-danger-red",
     chip: "AED 5,000+ typical fine",
   },
@@ -33,8 +33,8 @@ export function ProblemStrip() {
             The paperwork tax is real
           </h2>
           <p className="mt-4 text-lg text-slate-600">
-            In the UAE, every document has a deadline — and every deadline has
-            a price tag.
+            In the GCC, every document has a deadline — and every deadline has
+            a price tag: fines, impoundment, even frozen bank accounts.
           </p>
         </div>
 

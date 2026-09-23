@@ -10,19 +10,19 @@ const steps = [
     icon: FolderPlus,
     step: "1",
     title: "Create your collections",
-    body: "Personal, company, or both — one collection per business, everything grouped the way you think.",
+    body: "Personal, company, or both — pick your country and currency, then organize documents and money the way you think.",
   },
   {
     icon: ScanLine,
     step: "2",
     title: "Scan or upload documents",
-    body: "Snap a photo or drop a PDF. OCR reads it and fills in the title, type, expiry, emirate and authority.",
+    body: "Snap a photo or drop a PDF. OCR reads it and fills in the title, type, expiry date and issuing authority.",
   },
   {
     icon: BellRing,
     step: "3",
-    title: "Get 30/60/90-day alerts",
-    body: "Wazy watches every deadline and pings you three times before it's due — no more last-minute scrambles.",
+    title: "Get 90/60/30-day alerts",
+    body: "Wazy watches every deadline and pings you three times before it's due — with fine-risk estimates so you know the stakes.",
   },
   {
     icon: LineChart,

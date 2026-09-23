@@ -17,14 +17,17 @@ export const metadata: Metadata = {
     template: "%s — Wazy",
   },
   description:
-    "Wazy forecasts your cash flow and tracks every document expiry — trade licences, visas, Emirates ID, insurance — with alerts 30/60/90 days before they're due.",
+    "Wazy forecasts your cash flow and tracks every document expiry — trade licences, visas, civil IDs, insurance — with alerts 90/60/30 days before they're due. Built for the GCC: UAE, Saudi Arabia, Qatar, Kuwait, Bahrain and Oman.",
   keywords: [
     "Wazy",
+    "GCC budgeting app",
     "UAE budgeting app",
     "document expiry tracking",
     "cash flow forecast",
     "trade licence renewal",
     "Emirates ID reminder",
+    "ZATCA deadlines",
+    "AI budget planner",
   ],
   openGraph: {
     type: "website",
@@ -32,13 +35,13 @@ export const metadata: Metadata = {
     siteName: "Wazy",
     title: "Wazy — Every renewal. Every dirham. One dashboard.",
     description:
-      "AI-powered budgeting & document expiry tracking for the UAE. 90-day cash-flow forecasts and 30/60/90-day renewal alerts.",
+      "AI-powered budgeting & document expiry tracking for the GCC. 90-day cash-flow forecasts, 90/60/30-day renewal alerts and Groq AI planning across all six Gulf countries.",
   },
   twitter: {
     card: "summary_large_image",
     title: "Wazy — Every renewal. Every dirham. One dashboard.",
     description:
-      "AI-powered budgeting & document expiry tracking for the UAE. 90-day cash-flow forecasts and 30/60/90-day renewal alerts.",
+      "AI-powered budgeting & document expiry tracking for the GCC. 90-day cash-flow forecasts, 90/60/30-day renewal alerts and Groq AI planning across all six Gulf countries.",
   },
   alternates: { canonical: "/" },
 };
