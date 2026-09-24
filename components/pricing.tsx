@@ -3,44 +3,53 @@ import { Check } from "lucide-react";
 const tiers = [
   {
     name: "Free",
-    tagline: "Get organized",
-    price: "AED 0",
+    tagline: "Track what matters — free forever",
+    price: "$0",
     period: "forever",
+    note: null,
     highlight: false,
     features: [
+      "3 AI Executive Summaries / month",
+      "2 AI Budget Planner generations / month",
+      "1 personal collection",
       "Up to 10 tracked documents",
-      "Personal + 1 company collection",
-      "3 AI summaries / month",
-      "2 AI budget plans / month",
-      "Single user",
+      "Standard 30/60/90-day renewal reminders",
+      "Basic budgets & finance tracking",
     ],
   },
   {
     name: "Plus",
-    tagline: "Power users & freelancers",
-    price: "AED 25",
+    tagline: "For power users who never miss a renewal",
+    price: "$3.99",
     period: "per month",
+    note: "or $29.99/year — save ~37%",
     highlight: true,
     features: [
-      "Unlimited tracked documents",
-      "Unlimited collections",
-      "30 AI summaries / month",
-      "20 AI budget plans / month",
-      "2 users",
+      "15 AI Executive Summaries / month",
+      "10 AI Budget Planner generations / month",
+      "Unlimited documents",
+      "1 company collection",
+      "90-day cash-flow forecast & dip detection",
+      "PDF and CSV report exports",
+      "Custom reminder alert days per document",
+      "AI monthly executive summaries & AI budget planner",
     ],
   },
   {
     name: "Business",
-    tagline: "Teams & companies",
-    price: "AED 75",
+    tagline: "Multiple workspaces for PROs & SMEs",
+    price: "$9.99",
     period: "per month",
+    note: null,
     highlight: false,
     features: [
-      "Unlimited tracked documents",
-      "Unlimited collections",
-      "100 AI summaries / month",
-      "60 AI budget plans / month",
-      "Unlimited team members",
+      "Everything in Plus",
+      "40 AI Executive Summaries / month",
+      "25 AI Budget Planner generations / month",
+      "Unlimited company workspaces & collections",
+      "Document assignment to team members / responsible persons",
+      "Immutable renewal audit history",
+      "Multi-collection team data exports",
     ],
   },
 ];
@@ -99,6 +108,13 @@ export function Pricing() {
                   / {t.period}
                 </span>
               </div>
+              {t.note && (
+                <p
+                  className={`mt-1 text-xs ${t.highlight ? "text-cyan" : "text-slate-500"}`}
+                >
+                  {t.note}
+                </p>
+              )}
               <ul className="mt-7 flex-1 space-y-3.5">
                 {t.features.map((f) => (
                   <li key={f} className="flex items-start gap-3 text-sm">
@@ -128,7 +144,7 @@ export function Pricing() {
         </div>
 
         <p className="mt-8 text-center text-xs text-slate-500">
-          Prices shown in AED for illustration; local pricing shown in-app for
+          Prices shown in USD for illustration; local pricing shown in-app for
           each GCC country.
         </p>
       </div>
