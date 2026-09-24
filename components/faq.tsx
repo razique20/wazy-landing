@@ -22,11 +22,11 @@ const faqs = [
   },
   {
     q: "Can I export my data?",
-    a: "Yes — CSV and PDF export are built in for expiry lists and financial records, so your data is always yours to take.",
+    a: "Yes. Plus includes PDF and CSV report exports for your reports, and Business adds multi-collection team data exports. Your data is always yours to take.",
   },
   {
     q: "Is Wazy free?",
-    a: "Core tracking — documents, budgets, forecasts and reminders — is free forever with the Free tier. Plus and Business tiers add unlimited documents, more AI capacity and team access. See the pricing section above.",
+    a: "Yes — the Free tier is $0 forever: 1 personal collection with up to 10 tracked documents, standard 30/60/90-day renewal reminders, basic budgets, plus 3 AI Executive Summaries and 2 AI Budget Planner generations per month. Plus ($3.99/month or $29.99/year) unlocks unlimited documents, 90-day cash-flow forecasts and report exports, and Business ($9.99/month) adds unlimited company workspaces, team assignment and audit history. See the pricing section above.",
   },
   {
     q: "What kinds of documents can I track?",
@@ -34,15 +34,15 @@ const faqs = [
   },
   {
     q: "How do the 90/60/30-day alerts work?",
-    a: "For every document, Wazy sends reminders at 90, 60 and 30 days before expiry. You'll see urgency colors in the app — green (safe), amber (due soon), red (expiring or expired) — alongside a fine-risk estimate if the document lapses.",
+    a: "For every document, Wazy sends reminders at 90, 60 and 30 days before expiry. You'll see urgency colors in the app — green (safe), amber (due soon), red (expiring or expired) — alongside a fine-risk estimate if the document lapses. Plus also lets you set custom reminder alert days per document.",
   },
   {
     q: "How accurate is the cash-flow forecast?",
-    a: "The 90-day forecast simulates your daily balance using your recurring income and expenses, plus known renewal fees. It flags dips so you can move money early. Treat it as a planning aid, not financial advice.",
+    a: "The 90-day forecast — included with Plus and Business — simulates your daily balance using your recurring income and expenses, plus known renewal fees. It flags dips so you can move money early. Treat it as a planning aid, not financial advice.",
   },
   {
     q: "How does the AI quota work?",
-    a: "Each subscription tier includes a monthly quota of AI summaries and budget plans (e.g. Free gets 3 summaries and 2 plans per month). Wazy asks for your confirmation before using a credit, and your last generated summary or plan stays available without consuming quota.",
+    a: "Each subscription tier includes a monthly quota of AI Executive Summaries and AI Budget Planner generations: Free gets 3 summaries and 2 plans, Plus gets 15 and 10, Business gets 40 and 25. Wazy asks for your confirmation before using a credit, and your last generated summary or plan stays available without consuming quota.",
   },
 ];
 
