@@ -4,9 +4,9 @@ const tiers = [
   {
     name: "Free",
     tagline: "Track what matters — free forever",
-    price: "$0",
+    price: "AED 0",
     period: "forever",
-    note: null,
+    note: "≈ $0",
     highlight: false,
     features: [
       "3 AI Executive Summaries / month",
@@ -20,9 +20,9 @@ const tiers = [
   {
     name: "Plus",
     tagline: "For power users who never miss a renewal",
-    price: "$3.99",
+    price: "AED 25",
     period: "per month",
-    note: "or $29.99/year — save ~37%",
+    note: "≈ $6.99 / month",
     highlight: true,
     features: [
       "15 AI Executive Summaries / month",
@@ -38,9 +38,9 @@ const tiers = [
   {
     name: "Business",
     tagline: "Multiple workspaces for PROs & SMEs",
-    price: "$9.99",
+    price: "AED 99",
     period: "per month",
-    note: null,
+    note: "≈ $26.99 / month",
     highlight: false,
     features: [
       "Everything in Plus",
@@ -144,8 +144,8 @@ export function Pricing() {
         </div>
 
         <p className="mt-8 text-center text-xs text-slate-500">
-          Prices shown in USD for illustration; local pricing shown in-app for
-          each GCC country.
+          Prices shown in AED with approximate USD equivalents; local pricing
+          shown in-app for each GCC country.
         </p>
       </div>
     </section>

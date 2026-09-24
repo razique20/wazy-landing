@@ -26,7 +26,7 @@ const faqs = [
   },
   {
     q: "Is Wazy free?",
-    a: "Yes — the Free tier is $0 forever: 1 personal collection with up to 10 tracked documents, standard 30/60/90-day renewal reminders, basic budgets, plus 3 AI Executive Summaries and 2 AI Budget Planner generations per month. Plus ($3.99/month or $29.99/year) unlocks unlimited documents, 90-day cash-flow forecasts and report exports, and Business ($9.99/month) adds unlimited company workspaces, team assignment and audit history. See the pricing section above.",
+    a: "Yes — the Free tier is AED 0 forever: 1 personal collection with up to 10 tracked documents, standard 30/60/90-day renewal reminders, basic budgets, plus 3 AI Executive Summaries and 2 AI Budget Planner generations per month. Plus (AED 25/month, ≈$6.99) unlocks unlimited documents, 1 company collection, 90-day cash-flow forecasts and report exports, and Business (AED 99/month, ≈$26.99) adds unlimited company workspaces, team assignment and audit history. See the pricing section above.",
   },
   {
     q: "What kinds of documents can I track?",
