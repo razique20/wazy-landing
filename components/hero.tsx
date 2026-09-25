@@ -20,25 +20,25 @@ function DashboardMock() {
   return (
     <div className="relative mx-auto w-full max-w-[340px] rotate-2">
       {/* Glow */}
-      <div className="absolute -inset-8 -z-10 rounded-[3rem] bg-gradient-to-br from-cyan/30 via-navy/40 to-transparent blur-2xl" />
+      <div className="absolute -inset-8 -z-10 rounded-[3rem] bg-gradient-to-br from-violet/40 via-violet/20 to-transparent blur-2xl" />
 
-      <div className="overflow-hidden rounded-[2.5rem] border border-white/15 bg-obsidian p-2 shadow-2xl shadow-navy/50 ring-1 ring-white/10">
+      <div className="overflow-hidden rounded-[2.5rem] border border-white/15 bg-ink p-2 shadow-2xl shadow-violet/20 ring-1 ring-white/10">
         <div className="rounded-[2rem] bg-snow-white p-5">
           {/* Header */}
           <div className="flex items-center gap-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-full bg-navy">
+            <div className="flex h-10 w-10 items-center justify-center rounded-full bg-violet">
               <span className="text-sm font-bold text-white">M</span>
             </div>
             <div>
-              <div className="text-sm font-bold text-navy">Personal</div>
+              <div className="text-sm font-bold text-ink">Personal</div>
               <div className="text-[11px] text-slate-500">UAE · AED</div>
             </div>
           </div>
 
           {/* Overview card */}
-          <div className="mt-4 rounded-2xl bg-gradient-to-br from-navy-dark to-navy p-4">
+          <div className="mt-4 rounded-2xl bg-gradient-to-br from-ink to-ink-light p-4 shadow-inner">
             <div className="text-[11px] text-slate-300">September 2026 Overview</div>
-            <div className="mt-1 text-2xl font-bold text-cyan">AED 1,800.00</div>
+            <div className="mt-1 text-2xl font-bold text-violet-light">AED 1,800.00</div>
             <div className="mt-1 text-[10px] text-slate-400">Net Cash Flow</div>
             <div className="mt-3 flex justify-between border-t border-white/10 pt-3 text-[11px]">
               <span className="text-slate-300">
@@ -79,7 +79,7 @@ function DashboardMock() {
                 className="flex items-center justify-between rounded-xl bg-white px-3 py-2.5"
               >
                 <div>
-                  <div className="text-xs font-semibold text-navy">{r.name}</div>
+                  <div className="text-xs font-semibold text-ink">{r.name}</div>
                   <div className="text-[10px] text-slate-500">{r.sub}</div>
                 </div>
                 <span className={`text-xs font-bold ${r.tone}`}>{r.days}</span>
@@ -114,23 +114,23 @@ function MiniStat({
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden bg-obsidian pb-20 pt-28 sm:pt-32 lg:pb-28">
+    <section className="relative overflow-hidden bg-ink pb-20 pt-28 sm:pt-32 lg:pb-28">
       {/* Background gradients */}
       <div className="pointer-events-none absolute inset-0" aria-hidden>
-        <div className="absolute -top-40 left-1/2 h-[600px] w-[900px] -translate-x-1/2 rounded-full bg-navy/50 blur-3xl" />
-        <div className="absolute -right-40 top-40 h-[400px] w-[400px] rounded-full bg-cyan/10 blur-3xl" />
+        <div className="absolute -top-40 left-1/2 h-[600px] w-[900px] -translate-x-1/2 rounded-full bg-violet/25 blur-3xl" />
+        <div className="absolute -right-40 top-40 h-[400px] w-[400px] rounded-full bg-violet/15 blur-3xl" />
       </div>
 
       <div className="relative mx-auto grid max-w-7xl items-center gap-16 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
         <div className="animate-fade-up">
-          <div className="inline-flex items-center gap-2 rounded-full border border-cyan/30 bg-cyan/10 px-4 py-1.5 text-xs font-medium text-cyan">
+          <div className="inline-flex items-center gap-2 rounded-full border border-violet/30 bg-violet/10 px-4 py-1.5 text-xs font-medium text-violet-light">
             <CheckCircle2 className="h-3.5 w-3.5" />
             Built for the GCC · 6 currencies
           </div>
 
           <h1 className="mt-6 text-4xl font-bold leading-[1.08] tracking-tight text-white sm:text-5xl lg:text-6xl">
             Every renewal.{" "}
-            <span className="bg-gradient-to-r from-cyan to-navy bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-violet-light via-violet to-violet-hover bg-clip-text text-transparent">
               Every dirham.
             </span>{" "}
             One dashboard.
@@ -146,7 +146,7 @@ export function Hero() {
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <a
               href="#"
-              className="flex items-center gap-3 rounded-xl bg-white px-5 py-3 text-obsidian transition hover:bg-slate-100"
+              className="flex items-center gap-3 rounded-xl bg-white px-5 py-3 text-ink transition hover:bg-slate-100 shadow-md shadow-violet/10"
             >
               <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
                 <path d="M17.05 20.28c-.98.95-2.05.86-3.08.41-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.41C2.11 15.09 2.8 7.31 8.7 6.99c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.18 4.4zM12.03 7c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" />
@@ -160,7 +160,7 @@ export function Hero() {
             </a>
             <a
               href="#"
-              className="flex items-center gap-3 rounded-xl bg-white px-5 py-3 text-obsidian transition hover:bg-slate-100"
+              className="flex items-center gap-3 rounded-xl bg-white px-5 py-3 text-ink transition hover:bg-slate-100 shadow-md shadow-violet/10"
             >
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
                 <path d="M3 20.5V3.5c0-.6.34-1.11.84-1.35L13.7 12 3.84 21.85c-.5-.24-.84-.75-.84-1.35zm13.81-5.38L6.05 21.34 14.54 12.85l2.27 2.27zm3.35-4.31c.34.27.59.68.59 1.19s-.22.93-.57 1.2l-2.29 1.32-2.5-2.5 2.5-2.5 2.27 1.29zM6.05 2.66l10.76 6.22-2.27 2.27-8.49-8.49z" />
@@ -174,7 +174,7 @@ export function Hero() {
             </a>
             <a
               href="#how-it-works"
-              className="group flex items-center gap-1.5 text-sm font-semibold text-cyan transition hover:text-white"
+              className="group flex items-center gap-1.5 text-sm font-semibold text-violet-light transition hover:text-white"
             >
               See how it works
               <ChevronRight className="h-4 w-4 transition group-hover:translate-x-0.5" />
@@ -188,7 +188,7 @@ export function Hero() {
                 key={label}
                 className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3.5 py-1.5 text-xs font-medium text-slate-300 backdrop-blur"
               >
-                <Icon className="h-3.5 w-3.5 text-cyan" />
+                <Icon className="h-3.5 w-3.5 text-violet-light" />
                 {label}
               </span>
             ))}
@@ -205,7 +205,7 @@ export function Hero() {
           <div className="absolute -right-2 bottom-24 hidden w-44 sm:block lg:-right-8">
             <div className="rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur">
               <div className="flex items-center gap-2">
-                <Wallet className="h-4 w-4 text-cyan" />
+                <Wallet className="h-4 w-4 text-violet-light" />
                 <span className="text-xs text-slate-400">This month</span>
               </div>
               <div className="mt-1.5 text-lg font-bold text-white">

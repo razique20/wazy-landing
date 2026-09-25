@@ -21,14 +21,14 @@ export function LegalPage({
   return (
     <main className="bg-snow-white">
       {/* Header band */}
-      <div className="relative overflow-hidden bg-obsidian pb-16 pt-28 sm:pt-32">
+      <div className="relative overflow-hidden bg-ink pb-16 pt-28 sm:pt-32">
         <div className="pointer-events-none absolute inset-0" aria-hidden>
-          <div className="absolute -top-32 left-1/2 h-[400px] w-[700px] -translate-x-1/2 rounded-full bg-navy/50 blur-3xl" />
+          <div className="absolute -top-32 left-1/2 h-[400px] w-[700px] -translate-x-1/2 rounded-full bg-violet/20 blur-3xl" />
         </div>
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <Link
             href="/"
-            className="text-sm font-medium text-cyan transition hover:text-white"
+            className="text-sm font-medium text-violet-light transition hover:text-white"
           >
             ← Back to home
           </Link>
@@ -51,7 +51,7 @@ export function LegalPage({
                 <a
                   key={s.id}
                   href={`#${s.id}`}
-                  className="block rounded-lg px-3 py-1.5 text-sm text-slate-600 transition hover:bg-navy/5 hover:text-navy"
+                  className="block rounded-lg px-3 py-1.5 text-sm text-slate-600 transition hover:bg-violet/10 hover:text-violet"
                 >
                   {i + 1}. {s.title}
                 </a>
@@ -67,7 +67,7 @@ export function LegalPage({
           <div className="mt-10 space-y-10">
             {sections.map((s, i) => (
               <section key={s.id} id={s.id} className="scroll-mt-24">
-                <h2 className="text-xl font-bold text-navy">
+                <h2 className="text-xl font-bold text-ink">
                   {i + 1}. {s.title}
                 </h2>
                 {s.body.map((p) => (
@@ -79,7 +79,7 @@ export function LegalPage({
                   <ul className="mt-3 space-y-2">
                     {s.bullets.map((b) => (
                       <li key={b.slice(0, 32)} className="flex gap-2.5 leading-relaxed text-slate-600">
-                        <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-cyan-dark" />
+                        <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-violet" />
                         <span>{b}</span>
                       </li>
                     ))}
@@ -89,12 +89,12 @@ export function LegalPage({
             ))}
           </div>
 
-          <div className="mt-14 rounded-2xl border border-navy/10 bg-white/70 p-6 backdrop-blur">
+          <div className="mt-14 rounded-2xl border border-ink/10 bg-white/70 p-6 backdrop-blur">
             <p className="text-sm text-slate-600">
               Questions? Reach us at{" "}
               <a
                 href="mailto:support@wazy.app"
-                className="font-semibold text-cyan-dark hover:underline"
+                className="font-semibold text-violet hover:underline"
               >
                 support@wazy.app
               </a>

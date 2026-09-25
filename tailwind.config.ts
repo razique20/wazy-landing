@@ -8,15 +8,31 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        navy: { DEFAULT: "#23236B", dark: "#1E1B4B" },
-        cyan: { DEFAULT: "#00E5FF", dark: "#00B8D4" },
-        emerald: { DEFAULT: "#00E676" },
-        obsidian: "#0A0E1A",
+        violet: {
+          DEFAULT: "#4F46E5",
+          hover: "#4338CA",
+          light: "#6366F1",
+          dark: "#3730A3",
+        },
+        accent: {
+          DEFAULT: "#4F46E5",
+          hover: "#4338CA",
+        },
+        ink: {
+          DEFAULT: "#0F172A",
+          dark: "#090D16",
+          light: "#1E293B",
+          card: "#182238",
+        },
+        // Fallbacks & Semantic Colors
+        navy: { DEFAULT: "#0F172A", dark: "#090D16" },
+        cyan: { DEFAULT: "#4F46E5", dark: "#4338CA" },
+        obsidian: "#0F172A",
         charcoal: "#111827",
         "snow-white": "#F8FAFC",
         "safe-green": "#10B981",
-        "warning-amber": "#FFD740",
-        "danger-red": "#FF5252",
+        "warning-amber": "#F59E0B",
+        "danger-red": "#EF4444",
       },
       fontFamily: {
         grotesk: ["var(--font-space-grotesk)", "sans-serif"],

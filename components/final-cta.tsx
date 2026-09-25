@@ -42,12 +42,12 @@ const playIcon = (
 export function FinalCta() {
   return (
     <section id="download" className="relative overflow-hidden py-20 sm:py-24">
-      <div className="absolute inset-0 bg-gradient-to-br from-navy-dark via-navy to-cyan-dark" />
+      <div className="absolute inset-0 bg-gradient-to-br from-ink-dark via-ink to-ink-light" />
       <div
         className="pointer-events-none absolute inset-0"
         aria-hidden
       >
-        <div className="absolute left-1/2 top-1/2 h-[300px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-cyan/20 blur-3xl" />
+        <div className="absolute left-1/2 top-1/2 h-[300px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-violet/25 blur-3xl" />
       </div>
 
       <div className="relative mx-auto max-w-4xl px-4 text-center sm:px-6">
@@ -64,7 +64,7 @@ export function FinalCta() {
           <StoreBadge href="#" top="Get it on" bottom="Google Play" icon={playIcon} />
           <a
             href="#features"
-            className="group flex items-center gap-1.5 text-sm font-semibold text-cyan transition hover:text-white"
+            className="group flex items-center gap-1.5 text-sm font-semibold text-violet-light transition hover:text-white"
           >
             Explore the features
             <ChevronRight className="h-4 w-4 transition group-hover:translate-x-0.5" />

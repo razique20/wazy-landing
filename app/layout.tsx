@@ -10,6 +10,12 @@ const spaceGrotesk = Space_Grotesk({
   display: "swap",
 });
 
+export const viewport = {
+  themeColor: "#0F172A",
+  width: "device-width",
+  initialScale: 1,
+};
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://wazy.app"),
   title: {
@@ -18,6 +24,9 @@ export const metadata: Metadata = {
   },
   description:
     "Wazy forecasts your cash flow and tracks every document expiry — trade licences, visas, civil IDs, insurance — with alerts 90/60/30 days before they're due. Built for the GCC: UAE, Saudi Arabia, Qatar, Kuwait, Bahrain and Oman.",
+  applicationName: "Wazy",
+  authors: [{ name: "Wazy Team", url: "https://wazy.app" }],
+  generator: "Next.js",
   keywords: [
     "Wazy",
     "GCC budgeting app",
@@ -28,20 +37,65 @@ export const metadata: Metadata = {
     "Emirates ID reminder",
     "ZATCA deadlines",
     "AI budget planner",
+    "Saudi Arabia budgeting",
+    "Qatar document tracker",
+    "Kuwait civil ID renewal",
+    "Bahrain Sijilat renewal",
+    "Oman mulkiya expiry",
   ],
+  referrer: "origin-when-cross-origin",
+  creator: "Wazy",
+  publisher: "Wazy",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  category: "Finance & Productivity",
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: false,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
   openGraph: {
     type: "website",
+    locale: "en_US",
     url: "https://wazy.app",
     siteName: "Wazy",
     title: "Wazy — Every renewal. Every dirham. One dashboard.",
     description:
       "AI-powered budgeting & document expiry tracking for the GCC. 90-day cash-flow forecasts, 90/60/30-day renewal alerts and Groq AI planning across all six Gulf countries.",
+    images: [
+      {
+        url: "/logo.png",
+        width: 512,
+        height: 512,
+        alt: "Wazy App Logo - GCC Budgeting & Document Expiry Tracking",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Wazy — Every renewal. Every dirham. One dashboard.",
     description:
       "AI-powered budgeting & document expiry tracking for the GCC. 90-day cash-flow forecasts, 90/60/30-day renewal alerts and Groq AI planning across all six Gulf countries.",
+    images: ["/logo.png"],
+  },
+  icons: {
+    icon: [
+      { url: "/logo.png", type: "image/png" },
+      { url: "/favicon.ico" },
+    ],
+    shortcut: "/logo.png",
+    apple: "/logo.png",
   },
   alternates: { canonical: "/" },
 };

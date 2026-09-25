@@ -53,10 +53,10 @@ export function Faq() {
     <section id="faq" className="bg-snow-white py-20 sm:py-28">
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <span className="text-sm font-semibold uppercase tracking-widest text-cyan-dark">
+          <span className="text-sm font-semibold uppercase tracking-widest text-violet font-bold">
             FAQ
           </span>
-          <h2 className="mt-3 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
+          <h2 className="mt-3 text-3xl font-bold tracking-tight text-ink sm:text-4xl">
             Questions, answered
           </h2>
         </div>
@@ -67,7 +67,7 @@ export function Faq() {
             return (
               <div
                 key={f.q}
-                className="overflow-hidden rounded-2xl border border-slate-200/80 bg-white/70 backdrop-blur"
+                className="overflow-hidden rounded-2xl border border-slate-200/80 bg-white/70 backdrop-blur transition hover:border-violet/30"
               >
                 <button
                   type="button"
@@ -75,9 +75,9 @@ export function Faq() {
                   aria-expanded={isOpen}
                   className="flex w-full items-center justify-between gap-4 px-6 py-5 text-left"
                 >
-                  <span className="font-semibold text-navy">{f.q}</span>
+                  <span className="font-semibold text-ink">{f.q}</span>
                   <ChevronDown
-                    className={`h-5 w-5 shrink-0 text-cyan-dark transition-transform duration-300 ${
+                    className={`h-5 w-5 shrink-0 text-violet transition-transform duration-300 ${
                       isOpen ? "rotate-180" : ""
                     }`}
                   />

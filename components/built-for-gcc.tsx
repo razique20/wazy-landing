@@ -93,17 +93,17 @@ const features = [
 
 export function BuiltForGcc() {
   return (
-    <section className="relative overflow-hidden bg-obsidian py-20 sm:py-28">
+    <section className="relative overflow-hidden bg-ink py-20 sm:py-28">
       <div
         className="pointer-events-none absolute inset-0"
         aria-hidden
       >
-        <div className="absolute left-1/2 top-0 h-[400px] w-[800px] -translate-x-1/2 rounded-full bg-navy/40 blur-3xl" />
+        <div className="absolute left-1/2 top-0 h-[400px] w-[800px] -translate-x-1/2 rounded-full bg-violet/20 blur-3xl" />
       </div>
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
-          <span className="text-sm font-semibold uppercase tracking-widest text-cyan">
+          <span className="text-sm font-semibold uppercase tracking-widest text-violet-light font-bold">
             Built for the GCC
           </span>
           <h2 className="mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl">
@@ -120,7 +120,7 @@ export function BuiltForGcc() {
           {countries.map((c) => (
             <div
               key={c.name}
-              className="rounded-2xl border border-white/10 bg-white/5 p-5 backdrop-blur transition hover:border-cyan/40 hover:bg-white/10"
+              className="rounded-2xl border border-white/10 bg-white/5 p-5 backdrop-blur transition hover:border-violet/50 hover:bg-white/10"
             >
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-3">
@@ -129,7 +129,7 @@ export function BuiltForGcc() {
                   </span>
                   <span className="font-semibold text-white">{c.name}</span>
                 </div>
-                <span className="rounded-full bg-cyan/15 px-2.5 py-1 text-xs font-bold text-cyan">
+                <span className="rounded-full border border-violet/30 bg-violet/20 px-2.5 py-1 text-xs font-bold text-violet-light">
                   {c.currency}
                 </span>
               </div>
@@ -145,9 +145,9 @@ export function BuiltForGcc() {
           {features.map(({ icon: Icon, title, body }) => (
             <div
               key={title}
-              className="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur transition hover:border-cyan/40 hover:bg-white/10"
+              className="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur transition hover:border-violet/50 hover:bg-white/10"
             >
-              <Icon className="h-6 w-6 text-cyan" />
+              <Icon className="h-6 w-6 text-violet-light" />
               <h3 className="mt-4 font-semibold text-white">{title}</h3>
               <p className="mt-1.5 text-sm leading-relaxed text-slate-400">{body}</p>
             </div>

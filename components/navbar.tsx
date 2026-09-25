@@ -26,14 +26,14 @@ export function Navbar() {
       <nav
         className={`mx-auto flex h-14 max-w-3xl items-center justify-between rounded-2xl border px-4 transition-all duration-300 sm:rounded-full sm:px-6 ${
           scrolled
-            ? "border-white/10 bg-obsidian/85 shadow-xl shadow-obsidian/40 backdrop-blur-xl"
-            : "border-white/10 bg-obsidian/50 backdrop-blur-md"
+            ? "border-white/10 bg-ink/90 shadow-xl shadow-ink/50 backdrop-blur-xl"
+            : "border-white/10 bg-ink/60 backdrop-blur-md"
         }`}
       >
         {/* Wordmark */}
         <Link
           href="/"
-          className="text-lg font-bold tracking-tight text-white transition hover:text-cyan"
+          className="text-lg font-bold tracking-tight text-white transition hover:text-violet-light"
         >
           Wazy
         </Link>
@@ -44,7 +44,7 @@ export function Navbar() {
             <a
               key={l.href}
               href={l.href}
-              className="text-sm font-medium text-slate-300 transition hover:text-cyan"
+              className="text-sm font-medium text-slate-300 transition hover:text-violet-light"
             >
               {l.label}
             </a>
@@ -54,7 +54,7 @@ export function Navbar() {
         {/* Desktop CTA */}
         <a
           href="#download"
-          className="hidden rounded-full bg-cyan px-4 py-2 text-sm font-semibold text-obsidian shadow-[0_0_20px_rgba(0,229,255,0.35)] transition hover:bg-cyan-dark hover:text-white md:block"
+          className="hidden rounded-full bg-violet px-5 py-2 text-sm font-semibold text-white shadow-[0_0_20px_rgba(79,70,229,0.4)] transition hover:bg-violet-hover md:block"
         >
           Download
         </a>
@@ -75,13 +75,13 @@ export function Navbar() {
 
       {/* Mobile floating menu */}
       {open && (
-        <div className="mx-auto mt-2 max-w-3xl rounded-2xl border border-white/10 bg-obsidian/90 p-2 shadow-xl shadow-obsidian/40 backdrop-blur-xl md:hidden">
+        <div className="mx-auto mt-2 max-w-3xl rounded-2xl border border-white/10 bg-ink/95 p-2 shadow-xl shadow-ink/50 backdrop-blur-xl md:hidden">
           {links.map((l) => (
             <a
               key={l.href}
               href={l.href}
               onClick={() => setOpen(false)}
-              className="block rounded-xl px-4 py-2.5 text-sm font-medium text-slate-300 hover:bg-white/5 hover:text-cyan"
+              className="block rounded-xl px-4 py-2.5 text-sm font-medium text-slate-300 hover:bg-white/5 hover:text-violet-light"
             >
               {l.label}
             </a>
@@ -89,7 +89,7 @@ export function Navbar() {
           <a
             href="#download"
             onClick={() => setOpen(false)}
-            className="mt-1 block rounded-xl bg-cyan px-4 py-2.5 text-center text-sm font-semibold text-obsidian"
+            className="mt-1 block rounded-xl bg-violet px-4 py-2.5 text-center text-sm font-semibold text-white shadow-md shadow-violet/30"
           >
             Download
           </a>

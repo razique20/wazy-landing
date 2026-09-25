@@ -8,7 +8,7 @@ import { Pricing } from "@/components/pricing";
 import { Faq } from "@/components/faq";
 import { FinalCta } from "@/components/final-cta";
 
-const jsonLd = {
+const softwareSchema = {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
   name: "Wazy",
@@ -17,7 +17,84 @@ const jsonLd = {
   description:
     "AI-powered financial budgeting & cash-flow intelligence app with document expiry tracking and renewal alerts, built for personal users, freelancers and businesses across the GCC.",
   url: "https://wazy.app",
-  offers: { "@type": "Offer", price: "0", priceCurrency: "AED" },
+  image: "https://wazy.app/logo.png",
+  offers: [
+    { "@type": "Offer", name: "Free Tier", price: "0", priceCurrency: "AED" },
+    { "@type": "Offer", name: "Plus Tier", price: "25", priceCurrency: "AED" },
+    { "@type": "Offer", name: "Business Tier", price: "99", priceCurrency: "AED" },
+  ],
+  featureList: [
+    "90-day cash flow forecast",
+    "90/60/30-day renewal alerts",
+    "Emirates ID & Civil ID tracking",
+    "Trade licence renewal reminders",
+    "Groq AI financial planner",
+    "Google ML Kit OCR document scan",
+  ],
+};
+
+const orgSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Wazy",
+  url: "https://wazy.app",
+  logo: "https://wazy.app/logo.png",
+  email: "support@wazy.app",
+  description: "Financial intelligence and document expiry tracking for the GCC.",
+};
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Wazy",
+  url: "https://wazy.app",
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Which countries does Wazy support?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "All six GCC countries — UAE, Saudi Arabia, Qatar, Kuwait, Bahrain and Oman. Wazy natively supports each country's currency (AED, SAR, QAR, KWD, BHD, OMR) and its government authorities.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What platforms does Wazy support?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Wazy is available on iOS and Android. Your data syncs through your account, so your documents and budgets follow you across devices.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Is my data safe?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Everything is encrypted in transit and at rest, stored with row-level security so only you can access your workspace.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Is Wazy free?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes — the Free tier is AED 0 forever: 1 personal collection with up to 10 tracked documents, standard 30/60/90-day renewal reminders, basic budgets, plus AI summaries.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What kinds of documents can I track?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Trade licences, commercial registrations, visas, passports, Emirates/Civil IDs, vehicle registrations, tenancy contracts (Ejari), insurance policies and subscriptions.",
+      },
+    },
+  ],
 };
 
 export default function HomePage() {
@@ -25,7 +102,19 @@ export default function HomePage() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <Navbar />
       <main>
